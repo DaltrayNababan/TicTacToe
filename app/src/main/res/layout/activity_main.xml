@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/playerOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player One"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/playerOneScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginStart="40dp"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@id/playerOne"
+        app:layout_constraintTop_toBottomOf="@id/playerOne"/>
+
+    <TextView
+        android:id="@+id/playerTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player Two"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/playerTwoScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginEnd="40dp"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@id/playerTwo"
+        app:layout_constraintTop_toBottomOf="@id/playerTwo"/>
+
+    <TextView
+        android:id="@+id/playerStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/playerOneScore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_0"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:backgroundTint="#413F43"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toBottomOf="@id/playerStatus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_1"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:backgroundTint="#413F43"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toTopOf="@id/btn_0"
+        app:layout_constraintStart_toEndOf="@+id/btn_0"
+        app:layout_constraintEnd_toStartOf="@id/btn_2"/>
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:backgroundTint="#413F43"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toTopOf="@id/btn_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_1"/>
+
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:backgroundTint="#413F43"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toStartOf="@+id/btn_4"
+        app:layout_constraintTop_toBottomOf="@id/btn_0"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_4"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:backgroundTint="#413F43"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toTopOf="@id/btn_3"
+        app:layout_constraintStart_toEndOf="@+id/btn_3"
+        app:layout_constraintEnd_toStartOf="@id/btn_5"/>
+
+    <Button
+        android:id="@+id/btn_5"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:backgroundTint="#413F43"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toTopOf="@id/btn_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_4"/>
+
+    <Button
+        android:id="@+id/btn_6"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:backgroundTint="#413F43"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toStartOf="@+id/btn_1"
+        app:layout_constraintTop_toBottomOf="@id/btn_3"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_7"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:backgroundTint="#413F43"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toTopOf="@id/btn_6"
+        app:layout_constraintStart_toEndOf="@+id/btn_6"
+        app:layout_constraintEnd_toStartOf="@id/btn_8"/>
+
+    <Button
+        android:id="@+id/btn_8"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:backgroundTint="#413F43"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toTopOf="@id/btn_7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_7"/>
+
+    <Button
+        android:id="@+id/resetGame"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Reset Game"
+        android:textColor="#ffffff"
+        android:backgroundTint="#E1470D"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/btn_6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
